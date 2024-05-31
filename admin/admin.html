@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Header Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+        ul li {
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        body {
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .list-menu-phong-admin ul li {
+            float: left;
+             margin: 5px;
+            display: block;
+            padding: 2px;
+            font-size: small;
+            
+        }
+     
+        .list-menu-phong-admin a{
+            color: black;
+            text-decoration: none;
+            float: left;
+        }
+        .clear {
+            clear: both;
+        }
+        table td {
+            border-bottom: 1px solid black;
+        }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Your Brand</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+    <h3>Quan Ly Phong</h3>
+
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary dropdown-toggle"
+           data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+        Trang Thai
+        <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+           <a class="dropdown-item" href="#">Con Phong</a>
+           <a class="dropdown-item" href="#">Da Co Phong</a>
+        </div>
+     </div>
+
+    <div class="button-out-in mt-2 mb-2">
+        <button type="button" class="btn btn-success">Them Phong</button>
+    </div>
+    <div class="table-rom">
+        <table class="table" style="text-align: center;">
+            <thead class="thead-dark">
+               <tr>
+                  <th>MAPHONG</th>
+                  <th>NGUOIDATPHONG</th>
+                  <th>SDT</th>
+                  <th>THOIGIANDATPHONG</th>
+                  <th>GIAPHONG</th>
+                  <th>DIEUCHINH</th>
+               </tr>
+            </thead>
+            <tbody style="background-color: #DCDCDC;">
+               <tr>
+                  <td>PG0001</td>
+                  <td>Tran Van A</td>
+                  <td>0123456789</td>
+                  <td>18/5/2022</td>
+                  <td>240.000</td>
+                  <td>
+                    <button type="button" class="btn btn-warning"><a href="#" style="text-decoration: none; color: white;">Sua Phong</a></button>
+                    <button type="button" class="btn btn-danger"><a href="#" style="text-decoration: none; color: white;">Xoa Phong</a></button>
+                    <button type="button" class="btn btn-primary"><a href="#" style="text-decoration: none; color: white;">Tra Phong</a></button>
+                </td>
+               </tr>
+               <tr>
+                  <td>PG0002</td>
+                  <td>Nguyen Van C</td>
+                  <td>01234567893</td>
+                  <td>19/5/2022</td>
+                  <td>250.000</td>
+                  <td>
+                    <button type="button" class="btn btn-warning"><a href="#" style="text-decoration: none; color: white;">Sua Phong</a></button>
+                    <button type="button" class="btn btn-danger"><a href="#" style="text-decoration: none; color: white;">Xoa Phong</a></button>
+                    <button type="button" class="btn btn-primary"><a href="#" style="text-decoration: none; color: white;">Tra Phong</a></button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>PG0003</td>
+                  <td>Ha To C</td>
+                  <td>30123456789</td>
+                  <td>19/5/2022</td>
+                  <td>370.000</td>
+                  <td>
+                    <button type="button" class="btn btn-warning"><a href="#" style="text-decoration: none; color: white;">Sua Phong</a></button>
+                    <button type="button" class="btn btn-danger"><a href="#" style="text-decoration: none; color: white;">Xoa Phong</a></button>
+                    <button type="button" class="btn btn-primary"><a href="#" style="text-decoration: none; color: white;">Tra Phong</a></button>
+                  </td>
+               </tr>
+               
+            </tbody>
+         </table>
+    </div>
+</div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Header Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+        ul li {
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        body {
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+        .list-menu-phong-admin ul li {
+            float: left;
+             margin: 5px;
+            display: block;
+            padding: 2px;
+            font-size: small;
+            
+        }
+     
+        .list-menu-phong-admin a{
+            color: black;
+            text-decoration: none;
+            float: left;
+        }
+        .clear {
+            clear: both;
+        }
+        table td {
+            border-bottom: 1px solid black;
+        }
+        .container-box {
+            background-color: #DCDCDC;
+            width:400px;  border:1px solid black;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .form-row{
+            
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-left: 5px;
+        }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Your Brand</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-box mt-3">
+    
+    <form class="box-add">
+        <h4 class="mb-2">Them Phong</h4>
+       <div class="form-row">
+          <div class="form-group col">
+            <label for="inputAddress">Ma Phong</label>
+            <input type="text" class="form-control"
+               id="MaPG" placeholder="PG000x">
+          </div>
+          <div class="form-group ">
+            <label for="inputAddress">Ho Ten Nguoi Dat Phong</label>
+            <input type="text" class="form-control"
+               id="NguoiDatPhong" placeholder="Nguyen Van ABC">
+         </div>
+       </div>
+       <div class="form-row">
+        <div class="form-group col">
+            <label for="inputAddress">So Dien Thoai</label>
+            <input type="text" class="form-control"
+               id="SDT" placeholder="0123456789">
+         </div>
+       </div>
+       <div class="form-row">
+        <div class="form-group col">
+          <label for="inputAddress">Thoi Gian Nhan Phong</label>
+          <input type="text" class="form-control"
+             id="ThoigianNhanPhong" placeholder="11/11/2011">
+        </div>
+        <div class="form-group col">
+          <label for="inputAddress">Gia</label>
+          <input type="text" class="form-control"
+             id="Gia" placeholder="200000">
+       </div>
+     </div>
+       <button type="submit" class="btn btn-primary"><a href="#" style="text-decoration: none; color: white;">Them</a></button>
+    </form>
+ </div>
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
